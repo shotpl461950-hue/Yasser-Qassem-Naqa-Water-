@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مصنع مياه النقاء | تواصل معنا</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/logo.png" alt="شعار مياه النقاء">
+          <span>مياه النقاء</span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">الرئيسية</a>
+          <a href="about.html">من نحن</a>
+          <a href="products.html">منتجاتنا</a>
+          <a href="services.html">خدماتنا</a>
+          <a href="offers.html">العروض</a>
+          <a href="contact.html" class="active">تواصل معنا</a>
+        </nav>
+        <div class="nav-auth">
+          <a href="auth.html" class="btn-outline">دخول</a>
+          <a href="auth.html" class="btn-gold">حساب جديد</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="القائمة">☰</button>
+      </div>
+      <div class="nav-mobile" id="navMobile">
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">من نحن</a>
+        <a href="products.html">منتجاتنا</a>
+        <a href="services.html">خدماتنا</a>
+        <a href="offers.html">العروض</a>
+        <a href="contact.html" class="active">تواصل معنا</a>
+        <div class="nav-mobile-auth">
+          <a href="auth.html" class="btn-outline">دخول</a>
+          <a href="auth.html" class="btn-gold">حساب جديد</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>تواصل معنا</h1>
+      <p>نحن هنا لخدمتك والإجابة على جميع استفساراتك</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="contact-sidebar">
+            <div class="contact-info-card">
+              <div class="contact-info-item">
+                <span class="contact-icon">📍</span>
+                <div>
+                  <h6>العنوان</h6>
+                  <p>صنعاء - اليمن</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-icon">📞</span>
+                <div>
+                  <h6>الهاتف</h6>
+                  <p>774208633</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-icon">📧</span>
+                <div>
+                  <h6>البريد الإلكتروني</h6>
+                  <p>info@naqawater.com</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-icon">🕐</span>
+                <div>
+                  <h6>ساعات العمل</h6>
+                  <p>السبت - الخميس: 8 ص - 8 م</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-social">
+              <h6>تابعنا</h6>
+              <div class="social-links">
+                <a href="#" class="social-link" title="فيسبوك">
+                  <span>f</span>
+                  <small>فيسبوك</small>
+                </a>
+                <a href="#" class="social-link" title="تويتر">
+                  <span>𝕏</span>
+                  <small>تويتر</small>
+                </a>
+                <a href="#" class="social-link" title="انستغرام">
+                  <span>◎</span>
+                  <small>انستغرام</small>
+                </a>
+                <a href="#" class="social-link" title="واتساب">
+                  <span>○</span>
+                  <small>واتساب</small>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="contact-form-card">
+            <h3>أرسل لنا رسالة</h3>
+            <form id="contactForm" novalidate>
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label>الاسم الكامل</label>
+                    <input type="text" class="form-control" required placeholder="أدخل اسمك الكامل" minlength="3">
+                    <div class="error-msg">يرجى إدخال اسم صحيح (3 أحرف على الأقل)</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label>رقم الهاتف</label>
+                    <input type="tel" class="form-control" required placeholder="7XXXXXXXX" pattern="^7[0-9]{8}$">
+                    <div class="error-msg">يرجى إدخال رقم هاتف صحيح</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>البريد الإلكتروني</label>
+                <input type="email" class="form-control" required placeholder="example@email.com">
+                <div class="error-msg">يرجى إدخال بريد إلكتروني صحيح</div>
+              </div>
+              <div class="form-group">
+                <label>الموضوع</label>
+                <input type="text" class="form-control" required placeholder="موضوع الرسالة">
+                <div class="error-msg">يرجى إدخال الموضوع</div>
+              </div>
+              <div class="form-group">
+                <label>الرسالة</label>
+                <textarea class="form-control" required rows="5" placeholder="اكتب رسالتك هنا..." minlength="10"></textarea>
+                <div class="error-msg">يرجى كتابة رسالة (10 أحرف على الأقل)</div>
+              </div>
+              <button type="submit" class="btn-submit">إرسال الرسالة</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>موقعنا على الخريطة</h2>
+        <p>صنعاء - اليمن</p>
+      </div>
+      <div class="map-placeholder">
+        <div style="display:flex;align-items:center;justify-content:center;height:100%;flex-direction:column">
+          <span style="font-size:3rem">📍</span>
+          <p style="margin-top:1rem;font-size:1.1rem;color:var(--gray)">صنعاء - اليمن</p>
+          <p style="color:var(--gray);font-size:0.9rem">أضف خريطة جوجل هنا عند الاتصال بالإنترنت</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <h5>💧 مصنع مياه النقاء</h5>
+          <p>نلتزم بتقديم أنقى المياه لعملائنا الكرام، مع الحفاظ على أعلى معايير الجودة والنقاء.</p>
+          <div class="footer-social">
+            <a href="#" title="فيسبوك">f</a>
+            <a href="#" title="تويتر">𝕏</a>
+            <a href="#" title="انستغرام">◎</a>
+            <a href="#" title="واتساب">○</a>
+          </div>
+        </div>
+        <div class="col-4">
+          <h5>روابط سريعة</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="products.html">منتجاتنا</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="offers.html">العروض</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h5>تواصل معنا</h5>
+          <p>📞 774208633</p>
+          <p>📧 info@naqawater.com</p>
+          <p>📍 صنعاء - اليمن</p>
+          <p>🕐 8:00 صباحاً - 8:00 مساءً</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 مصنع مياه النقاء. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" title="العودة للأعلى">▲</button>
+
+  <!-- مكتبة jQuery المحلية -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
